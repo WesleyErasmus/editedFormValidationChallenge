@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #d4a824;
+    padding: 0 10px;
+}
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+}
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+}
+form{
+    width: 100%;
+}
+.input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.input_field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.input_field .input,
+.input_field .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.wrapper .input_field .textarea{
+    resize: none;
+    height: 125px;
+}
+.wrapper .country_select .input{
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+    
+}
+.wrapper .input_field .input:focus,
+.wrapper .input_field .textarea:focus,
+.wrapper .input_field .select:focus{
+    border: 1px solid #fec107;
+}
+.wrapper .check_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .check_field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 15px;
+}
+   
+.wrapper .check_field input {
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+.wrapper .input_field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  .wrapper .input_field .btn:hover{
+    background: #ffd658;
+  }
+  
+  .wrapper .input_field:last-child{
+    margin-bottom: 0;
+  }
+  ::placeholder {
+    color: #d4a824;
+    font-style: italic;
+  }
+  p{
+      color: #d4a824;
+      font-size: 14px;
+      text-align: end;
+  }

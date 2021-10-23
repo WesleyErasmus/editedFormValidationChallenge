@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edited Form Validation Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--This form was structured from a YouTube that I found online.
+
+I have tweaked it to cater more the CodeSpace Form Validation Challenge.
+
+https://www.youtube.com/watch?v=p9qBEq-YRSc&ab_channel=CodingMarket
+
+I hope you enjoy!-->
+
+<body>
+    <div class="wrapper">
+    <div class="title">
+        Registration Form
+    </div>
+    <form>
+
+        <div class="input_field">
+            <label>User ID:</label>
+            <input type="text" class="input" placeholder="Required, length of 5 to 12 characters" minlength="5" maxlength="12" required>
+        </div>
+        <div class="input_field">
+            <label>Password:</label>
+            <input type="password" class="input" placeholder="Required, lengthof 7 to 12 characters" minlength="7" maxlength="12" required>
+        </div>
+        <div class="input_field">
+            <label>Full Name:</label>
+            <input type="text" class="input" placeholder="Required, letters only" required>
+        </div>
+        <div class="input_field">
+            <label>Address:</label>
+            <textarea class="textarea" placeholder="Optional"></textarea>
+        </div>
+        <div class="input_field">
+            <label>Country:</label>
+            <div class="country_select">
+            <select class="input" required>
+                <option value="South Africa">South Africa</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+            </select><p>required</p>
+        </div>
+        </div>
+        <div class="input_field">
+            <label>Postal Code:</label>
+            <input type="number" class="input" placeholder="Required, numeric only" required>
+        </div>
+        <div class="input_field">
+            <label>Email:</label>
+            <input type="email" class="input" placeholder="Required, valid email address only" required>
+        </div>
+        <div class="check_field">
+            <label>Sex:</label>
+            <input type="radio" name="sex" class="input" required>
+            <label> Male</label>
+            <input type="radio" name="sex" class="input" required>
+            <label> Female</label><p>required</p>
+        </div>
+        <div class="check_field">
+            <label>Language:</label>
+            <input type="radio" name="Language" class="input" required>
+            <label> English</label>
+            <input type="radio" name="Language" class="input" required>
+            <label> Non-English</label><p>required</p>
+        </div>
+        <div class="input_field">
+            <label>About</label>
+            <textarea class="textarea" placeholder="Write something...(optional)"></textarea>
+        </div>
+        <div class="input_field">
+            <input type="submit" value="Register" class="btn">
+        </div>
+
+    </form>
+</div> <!--class wrapper end-->
+</body>
+</html>
